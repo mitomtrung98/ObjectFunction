@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>object-constructor</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info">
+    <h2>hotel availability</h2>
+    <div id="hotelName"></div>
+    <div id="availability">
+        <p id="rooms"></p>
+        <p>rooms ssleft</p>
+    </div>
+</div>
+<script>
+
+    var hotel = new Object();
+
+
+
+    hotel.name = 'ROOM';
+    hotel.soPhong = 50;
+    hotel.soPhongBook = 35;
+    hotel.soPhongConLai =  function (){
+        return this.soPhong - this.soPhongBook;
+    };
+    var elname = document.getElementById('hotelName');
+    elname.textContent = hotel.name;
+    var elsoPhongConLai = document.getElementById('rooms');
+    elsoPhongConLai.textContent = hotel.soPhongConLai();
+</script>
+</body>
+</html>

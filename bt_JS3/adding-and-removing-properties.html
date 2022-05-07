@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions, Methods &amp; Objects - Adding properties</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info">
+    <h2>hotel facilities</h2>
+    <div id="hotelName"></div>
+    <div>
+        <p id="pool">Pool</p>
+        <p id="gym">Gym</p>
+    </div>
+</div>
+<script>
+    var hotel = {
+        name : 'Fa1ry',
+        rooms : 100,
+        booked : 220,
+    };
+    hotel.gym = true;
+    hotel.pool = false;
+    delete hotel.booked;
+
+    var elname = document.getElementById('hotelName');
+    elname.textContent = hotel.name;
+
+    var elgym = document.getElementById('gym');
+    elgym.textContent = hotel.gym;
+
+    var elpool = document.getElementById('pool');
+    elpool.textContent = hotel.pool;
+
+</script>
+</body>
+</html>

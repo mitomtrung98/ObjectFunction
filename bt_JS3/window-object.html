@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>window-object</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="info"></div>
+<script>
+    var msg = '<h2>browser window</h2><p>width:'+window.innerWidth+'</p>';
+    msg += '<h2>height</h2><p>'+window.innerHeight+'</p>';
+    msg += '<h2>history</h2><p>items:'+window.history.length+'</p>';
+    msg += '<h2>screen</h2><p>width:'+window.screen.availWidth+'</p>';
+    msg += '<h2>screen</h2><p>height'+window.screen.height+'</p>';
+    var el = document.getElementById('info');
+    el.innerHTML = msg;
+    alert('current page: '+window.location);
+</script>
+</body>
+</html>

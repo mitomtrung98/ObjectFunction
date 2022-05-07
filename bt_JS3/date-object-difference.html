@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date-object-difference</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="message">Established 1945</div>
+<script>
+    var today = new Date();
+    var year = today.getFullYear();
+    var est = new Date('1998 15:45:55');
+    var diff = today.getTime() - est.getTime();
+    diff = (diff/31556900000);
+    var elmsg = document.getElementById('message');
+    elmsg.textContent = Math.floor(diff) + ' năm đã trôi qua';
+</script>
+</body>
+</html>

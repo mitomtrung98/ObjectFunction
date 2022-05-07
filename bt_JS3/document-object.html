@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document-object</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="footer"></div>
+<script>
+    var msg = '' + document.title +'</br>';
+    msg += '' + document.URL + '</br>';
+    msg += ''+document.lastModified + '</p>';
+    var el = document.getElementById('footer');
+    el.innerHTML = msg;
+</script>
+</body>
+</html>

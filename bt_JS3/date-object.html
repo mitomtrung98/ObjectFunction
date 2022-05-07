@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date-object</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<h1>TravelWorthy</h1>
+<div id="footer"></div>
+<script src="images/jv.js">
+    var today = new Date();
+    var year = today.getFullYear();
+    var el = document.getElementById('footer');
+    el.innerHTML = '<p>Copyright &copy;' + year + '</p>'
+</script>
+</body>
+</html>
